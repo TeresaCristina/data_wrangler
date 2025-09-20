@@ -1,20 +1,18 @@
-Project anatomy
-Code
+# Project anatomy
+
+## Code
+
+```
 src/data_wrangler/cli.py
-What it is: The command-line entry point.
+```
 
-What it does:
+The command-line entry point does the following:
 
-Parses flags (at minimum: --input, optional --limit).
+- Parses flags (--input, [--limit]).
 
-Calls load_directory(...) to ingest files from the folder you point at.
+- Calls load_directory(...) to process the files.
 
-Writes the unified table to build/combined.csv.
+- Writes the unified table into build/combined.csv.
 
-Prints a quick summary (rows/cols).
+- Prints a quick summary (rows/cols).
 
-Key pieces you’ll see:
-
-parse_args(argv=None): defines the CLI flags.
-
-main(argv=None): orchestrates discovery → load → save.
