@@ -1,6 +1,6 @@
 from pathlib import Path
 import re, json
-import pandas as pd
+import pandas as pd # pyright: ignore[reportMissingModuleSource]
 
 def find_files(in_dir: Path, patterns=("*.csv", "*.json", "*.ndjson", "*.jsonl", "*.log", "*.txt")):
     paths = []

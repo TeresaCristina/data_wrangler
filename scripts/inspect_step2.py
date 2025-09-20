@@ -1,9 +1,9 @@
 from pathlib import Path
-import sys, json
+import sys
 sys.path.insert(0, str(Path("src").resolve()))
 
 from data_wrangler.loaders import find_files, load_json_any
-import pandas as pd
+import pandas as pd # pyright: ignore[reportMissingModuleSource]
 
 patterns = ("*.csv","*.json","*.ndjson","*.jsonl")
 root = Path("sample_data")
