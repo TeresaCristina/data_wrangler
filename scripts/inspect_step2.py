@@ -2,7 +2,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path("src").resolve()))
 
-from data_wrangler.loaders import find_files, load_json_any
+from data_wrangler.auxiliar import find_files, load_json_any
 import pandas as pd # pyright: ignore[reportMissingModuleSource]
 
 patterns = ("*.csv","*.json","*.ndjson","*.jsonl")

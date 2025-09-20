@@ -12,10 +12,10 @@ Usage:
 
 import argparse
 from pathlib import Path
-from .loaders import load_directory
+from . import load_directory
 
 def parse_args(argv=None):
-    p = argparse.ArgumentParser(description="Files → combined table")
+    p = argparse.ArgumentParser(description="Files -> combined table")
     p.add_argument("--input", required=True, help="Folder with files")
     p.add_argument("--limit", type=int, help="Rows per file")
     return p.parse_args(argv)
