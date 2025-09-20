@@ -10,7 +10,8 @@ def parse_args(argv=None):
 
 def main(argv=None):
     args = parse_args(argv)
-    df = load_directory(Path(args.input), patterns=("*.csv",), limit=args.limit)
+    df = load_directory(Path(args.input), limit=args.limit)
+
 
     outdir = Path("build")
     outdir.mkdir(parents=True, exist_ok=True)

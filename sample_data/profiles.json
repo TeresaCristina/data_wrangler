@@ -1,0 +1,5 @@
+[
+  {"user_id": 1, "plan": "pro"},
+  {"user_id": 2, "plan": "free"},
+  {"user_id": 3, "plan": "pro"}
+]
